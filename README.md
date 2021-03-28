@@ -26,7 +26,7 @@ jobs:
         with:
           username: ${{ secrets.SONATYPE_USERNAME }}
           password: ${{ secrets.SONATYPE_PASSWORD }}
-          staged_repository_id: ${{ needs.create_staging_repository.outputs.repository-id }}
+          staging_repository_id: ${{ needs.create_staging_repository.outputs.repository-id }}
 ```
 
 The different arguments are:
