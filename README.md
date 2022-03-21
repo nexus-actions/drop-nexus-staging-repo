@@ -22,6 +22,7 @@ jobs:
     if: ${{ always() && needs.build.result != 'success' }}
     steps:
       - name: Discard
+        # replace '@main' with the latest commit sha, see https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions#using-third-party-actions
         uses: nexus-actions/drop-nexus-staging-repo@main
         with:
           username: ${{ secrets.SONATYPE_USERNAME }}
