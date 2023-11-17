@@ -1,0 +1,9 @@
+inputs:
+  username: 
+    type: string
+  password: 
+    type: string
+  staging_repository_id: 
+    type: string
+  base_url:
+    type: string
